@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <form action="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-2"></div>
+                    <div class="d-none d-md-block col-md-2">
+                        <label for="gender">Płeć</label>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-7">
+                        <input type="search" list="genders" name="gender" id="gender">
+                        <datalist id="genders">
+                            <option value="Kobieta"></option>
+                            <option value="Mężczyzna"></option>
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2">
+                        <label for="age">Wiek</label>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-7">
+                        <input type="number" id="age" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2">
+                        <label for="height">Wzrost (cm)</label>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-7">
+                        <input type="number" id="height" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2">
+                        <label for="mass">Masa (kg)</label>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-7">
+                        <input type="number" id="mass" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2">
+                        <label for="activity">Aktywność</label>
+
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-7">
+                        <input type="search" list="activities" name="p-activity" id="activity">
+                        <datalist id="activities">
+                            <option value="pacjent chory, leżący w łóżku" ></option>
+                            <option value="niska aktywność fizyczna"></option>
+                            <option value="umiarkowana aktywność fizyczna" selected></option>
+                            <option value="aktywny tryb życia"></option>
+                            <option value="bardzo aktywny tryb życia"></option>
+                            <option value="wyczynowe uprawianie sportu"></option>
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-5 btn-container">
+                        <button id="click-btn"> Oblicz </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div id="calc-result-bar" class="col-sm-10">
+                        <p id="you-need"></p>
+                        <h4><span id="result-container"></span></h4>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="jquery.js"></script>
+    <script src="bootstrap/bootstrap-js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
