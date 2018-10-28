@@ -19,16 +19,40 @@ label{
     vertical-align: middle;
     display: inline-block;
     line-height: 100%;
-    padding-top: 20%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: right;
 }
 .container{
     margin-bottom: 10px;
     box-sizing: border-box;
     padding: 5px 0;
 }
-input{
+.col-sm-6,.col-sm-4{
+    padding-top: 1em;
+}
+
+#result-container{
+    text-transform: uppercase;
+}
+button#click-btn,input[type=reset]{
+    background-color: #95cb0e;
+    border: 1px solid #95cb0e;
+    color: whitesmoke;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5em 1em;
+    transition-duration: 0.5s;
+    position: relative;
+    z-index: 10;
+}
+button#click-btn:hover,input[type=reset]:hover{
+    background-color: #e5003d;
+    border-color: #e5003d;
+    cursor: pointer;
+}
+input[type=text],input[type=number]{
     display: inline-block;
-    margin: 0;
     border: 1px solid #e5003d;
     background-color: #e5003d;
     color: whitesmoke;
@@ -37,31 +61,22 @@ input{
     border-radius: 5px;
     outline: none;
     text-align: center;
-}
-#calc-result-bar{
-    margin-top: 5vh;
-    text-align: center;
-    font-size: 1.2em;
-}
-#result-container{
-    text-transform: uppercase;
-}
-button#click-btn{
-    background-color: #95cb0e;
-    border: 1px solid #95cb0e;
-    color: whitesmoke;
-    border-radius: 5px;
-    outline: none;
-    padding: 0.5em;
-    transition-duration: 0.5s;
-}
-button#click-btn:hover{
-    background-color: #e5003d;
-    border-color: #e5003d;
+    width: 10vw;
 }
 .btn-container{
     text-align: center;
 }
-.clearfix{
-    overflow: auto;
+#result-bar{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    opacity: 0;
+    transition-duration: 1s;
+}
+#result-bar.fading-in-text{
+    opacity: 0;
+}
+#result-bar.fading-in-text{
+    opacity: 1;
 }

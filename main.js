@@ -4,6 +4,10 @@ $(document).ready(function(){
         event.preventDefault();
         calc();
     });
+    $('#reset-btn').click(function(){
+        $('#you-need').text(" ");
+        $('#result-container').text(" ");
+    })
 })
 calc=()=>{
     
@@ -20,8 +24,11 @@ calc=()=>{
     if(gender=='Mężczyzna'){
         genderFactor=5;
     }
-    else{
+    else if(gender=='Kobieta'){
         genderFactor=-161;
+    }
+    else{
+        genderFactor=-9999999;
     }
     genderFactor = parseInt(genderFactor);
     
@@ -47,7 +54,7 @@ calc=()=>{
             activityFactor=2.3;
             break;
         default:
-            activityFactor=1.71;
+            genderFactor=-999999;
     }
     result=parseInt((10*mass+6.25*height-5*age+genderFactor)*activityFactor);
 
@@ -55,8 +62,17 @@ calc=()=>{
     printResult(result);
 }
 printResult=(result)=>{
-    $('#you-need').text("Potrzebujesz około: ");
-    $('#result-container').text(result+" kcal");
+    if(result<=0){
+        $('#you-need').text('Podane nieprawidłowe wartości, kliknij "Reset" i spróbuj jeszcze raz.');
+    }
+    else{
+        $('#you-need').text("Potrzebujesz około: ");
+        $('#result-container').text(result+" kcal");
+    }
+        $('#result-bar').removeClass("fading-in-text");
+        $('#result-bar').addClass("fading-out-text");
+        $('#result-bar').removeClass("fading-out-text");
+        $('#result-bar').addClass("fading-in-text");
 }
 
 
