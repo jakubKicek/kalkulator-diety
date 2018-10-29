@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap-css/bootstrap.min.css">
 </head>
 
 <body>
@@ -13,147 +13,151 @@
         <form action="">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-2"></div>
-
-                    <div id="big-one" class="d-none d-md-block col-md-8">
-                        <div class="container-fluid">
+                    <div class="d-none d-md-block col-md-2 col-lg-3"></div>
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <div class="container">
                             <div class="row">
-                                <div class="col-sm-12 col-md-6 col-xl-3">
-                                    <label for="gender">Płeć</label>
-                                    <input class="form-control" type="text" list="genders" name="gender" id="gender" autocomplete="off">
-                                    <datalist id="genders">
-                                            <option value="Kobieta"></option>
-                                            <option value="Mężczyzna"></option>
-                                        </datalist>
-                                </div>
-                                <div class="col-sm-12 d-md-none divider"></div>
-                                <div class="col-sm-12 col-md-6 col-xl-3">
-                                    <label for="age">Wiek</label>
-                                    <input class="form-control" type="number" id="age" autocomplete="off">
-                                </div>
-                                
-                                <div class="col-sm-12 d-xl-none divider"></div>
+                                <div class="col-sm-12 col-md-6 checkCol"></div>
+                                <div class="col-sm-12 col-md-6 checkCol"></div>
+                            </div>
 
-                                <div class="col-sm-12 col-md-6 col-xl-3">
-                                    <label for="height">Wzrost (cm)</label>
-                                    <input class="form-control" type="number" id="height" autocomplete="off">
+                            <div class="row">
+                                <div class="col-sm-12 d-lg-none">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <label for="gender1">Płeć</label>
+                                                <input class="form-control" type="text" list="genders1" name="gender" id="gender1" autocomplete="off">
+                                                <datalist id="genders1">
+                                                        <option value="Kobieta"></option>
+                                                        <option value="Mężczyzna"></option>
+                                                </datalist>
+                                            </div>
+                                            <div class="col-sm-12 divider"></div>
+                                            
+                                            <div class="col-sm-12">
+                                                <label for="age1">Wiek</label>
+                                                <input class="form-control" type="number" id="age1" autocomplete="off">
+                                            </div>
+                                            <div class="col-sm-12 divider"></div>
+                                            
+                                            <div class="col-sm-12">
+                                                <label for="height1">Wzrost (cm)</label>
+                                                <input class="form-control" type="number" id="height1" autocomplete="off">
+                                            </div>
+                                            <div class="col-sm-12 divider"></div>
+                                            
+                                            <div class="col-sm-12">
+                                                <label for="mass1">Waga (kg)</label>
+                                                <input class="form-control" type="number" id="mass1" autocomplete="off">
+                                            </div>
+                                            <div class="col-sm-12 divider"></div>
+                                            
+                                            <div class="col-sm-12">
+                                                <label for="activity1">Aktywność</label>
+                                                <input class="form-control" type="text" list="activities" name="p-activity" id="activity1" autocomplete="off">
+                                                <datalist id="activities">
+                                                    <option value="pacjent chory, leżący w łóżku" ></option>
+                                                    <option value="niska aktywność fizyczna"></option>
+                                                    <option value="umiarkowana aktywność fizyczna" selected></option>
+                                                    <option value="aktywny tryb życia"></option>
+                                                    <option value="bardzo aktywny tryb życia"></option>
+                                                    <option value="wyczynowe uprawianie sportu"></option>
+                                                </datalist>
+                                            </div>
+                                            <div class="col-sm-12 divider"></div>
+                                            
+                                            <div class="col-sm-5">
+                                                <input class="form-control" id="reset-btn1" type="reset" value="Reset">
+                                            </div>
+                                            <div class="col-sm-2"></div>
+                                            <div class="col-sm-5">
+                                                <button class="form-control" id="click-btn1"> Oblicz </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-12 d-md-none divider"></div>
-                                <div class="col-sm-12 col-md-6 col-xl-3">
-                                    <label for="mass">Waga (kg)</label>
-                                    <input class="form-control" type="number" id="mass" autocomplete="off">
-                                </div>
-                                <div class="col-sm-12 divider"></div>
-
-                                <div class="col-sm-12">
-                                   <label for="activity">Aktywność</label>
-                                   <input class="form-control" type="text" list="activities" name="p-activity" id="activity" autocomplete="off">
-                                    <datalist id="activities">
-                                        <option value="pacjent chory, leżący w łóżku" ></option>
-                                        <option value="niska aktywność fizyczna"></option>
-                                        <option value="umiarkowana aktywność fizyczna" selected></option>
-                                        <option value="aktywny tryb życia"></option>
-                                        <option value="bardzo aktywny tryb życia"></option>
-                                        <option value="wyczynowe uprawianie sportu"></option>
-                                    </datalist></div>
-                                <div class="col-sm-12 divider"></div>
-
-                                <div class="col-sm-12 col-xl-6">
-                                    <input class="form-control" id="reset-btn" type="reset" value="Reset">
-                                </div>
-                                <div class="col-sm-12 d-xl-none divider"></div>
-                                <div class="col-sm-12 col-xl-6">
-                                    <button class="form-control" id="click-btn"> Oblicz </button>
+                                <div class="d-none d-lg-block col-lg-12">
+                                    <div class="container">
+                                        <div class="row checkCol">
+                                            <div class="col-lg-4">
+                                                <label for="gender2">Płeć</label>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="text" list="genders" name="gender" id="gender2" autocomplete="off">
+                                                <datalist id="genders">
+                                                        <option value="Kobieta"></option>
+                                                        <option value="Mężczyzna"></option>
+                                                </datalist>
+                                            </div>
+                                            <div class="col-lg-12 divider"></div>
+                                            
+                                            <div class="col-lg-4">
+                                                <label for="age2">Wiek</label>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="number" id="age2" autocomplete="off">
+                                            </div>
+                                            <div class="col-lg-12 divider"></div>
+                                            
+                                            <div class="col-lg-4">
+                                                <label for="height2">Wzrost (cm)</label>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="number" id="height2" autocomplete="off">
+                                            </div>
+                                            <div class="col-lg-12 divider"></div>
+                                            
+                                            <div class="col-lg-4">
+                                                <label for="mass"2>Waga (kg)</label>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="number" id="mass2" autocomplete="off">
+                                            </div>
+                                            <div class="col-lg-12 divider"></div>
+                                            
+                                            <div class="col-lg-4">
+                                                <label for="activity2">Aktywność</label>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <input class="form-control" type="text" list="activities" name="p-activity" id="activity2" autocomplete="off">
+                                                <datalist id="activities">
+                                                    <option value="pacjent chory, leżący w łóżku" ></option>
+                                                    <option value="niska aktywność fizyczna"></option>
+                                                    <option value="umiarkowana aktywność fizyczna" selected></option>
+                                                    <option value="aktywny tryb życia"></option>
+                                                    <option value="bardzo aktywny tryb życia"></option>
+                                                    <option value="wyczynowe uprawianie sportu"></option>
+                                                </datalist>
+                                            </div>
+                                            <div class="col-lg-12 divider"></div>
+                                            
+                                            <div class="col-lg-1"></div>
+                                            <div class="col-lg-4">
+                                                <input class="form-control" id="reset-btn2" type="reset" value="Reset">
+                                            </div>
+                                            <div class="col-lg-2"></div>
+                                            <div class="col-lg-4">
+                                                <button class="form-control" id="click-btn2"> Oblicz </button>
+                                            </div>
+                                            <div class="col-lg-1"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                                        <div class="col-sm-2"></div>
-
-                    
-                    <div id="small-one" class="col-sm-12 d-md-none">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <label for="gender">Płeć</label>
-                                    <input class="form-control" type="text" list="genders" name="gender" id="gender" autocomplete="off">
-                                    <datalist id="genders">
-                                            <option value="Kobieta"></option>
-                                            <option value="Mężczyzna"></option>
-                                        </datalist>
-                                </div>
-                                <div class="col-sm-12 divider"></div>
-                                <div class="col-sm-12">
-                                    <label for="age">Wiek</label>
-                                    <input class="form-control" type="number" id="age" autocomplete="off">
-                                </div>
-                                
-                                <div class="col-sm-12 divider"></div>
-
-                                <div class="col-sm-12">
-                                    <label for="height">Wzrost (cm)</label>
-                                    <input class="form-control" type="number" id="height" autocomplete="off">
-                                </div>
-                                <div class="col-sm-12 divider"></div>
-                                <div class="col-sm-12">
-                                    <label for="mass">Waga (kg)</label>
-                                    <input class="form-control" type="number" id="mass" autocomplete="off">
-                                </div>
-                                <div class="col-sm-12 divider"></div>
-
-                                <div class="col-sm-12">
-                                   <label for="activity">Aktywność</label>
-                                   <input class="form-control" type="text" list="activities" name="p-activity" id="activity" autocomplete="off">
-                                    <datalist id="activities">
-                                        <option value="pacjent chory, leżący w łóżku" ></option>
-                                        <option value="niska aktywność fizyczna"></option>
-                                        <option value="umiarkowana aktywność fizyczna" selected></option>
-                                        <option value="aktywny tryb życia"></option>
-                                        <option value="bardzo aktywny tryb życia"></option>
-                                        <option value="wyczynowe uprawianie sportu"></option>
-                                    </datalist></div>
-                                <div class="col-sm-12 divider"></div>
-
-                                <div class="col-sm-12">
-                                    <input class="form-control" id="reset-btn" type="reset" value="Reset">
-                                </div>
-                                <div class="col-sm-12 divider"></div>
-                                <div class="col-sm-12">
-                                    <button class="form-control" id="click-btn"> Oblicz </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-
+                    <div class="d-none d-md-block col-md-2 col-lg-3"></div>
                 </div>
             </div>
-
         </form>
         <div id="result-bar">
             <span id="you-need"></span><span id="result-container"></span>
         </div>
     </div>
-    <!--
-    <div id="map-wrapper">
-        <div id="map-mask">
-            
-        </div>
-        <div id="map-actual">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1239408.8762016129!2d20.2635499!3d52.6469632!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spl!4v1540770965819" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <div id="map-range"></div>
-        <div id="map-range-inner"></div>
-    </div>
--->
-
-
-
 
     <script src="jquery.js"></script>
-    <script src="bootstrap/bootstrap-js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </body>
 

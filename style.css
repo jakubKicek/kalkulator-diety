@@ -1,4 +1,5 @@
 /*#e5003d*/
+/*
 #calculator{
     margin-right: auto;
     margin-left: auto;
@@ -45,19 +46,7 @@ input[type=text],input[type=number]{
 .btn-container{
     text-align: center;
 }
-#result-bar{
-    margin-top: 2em;
-    text-align: center;
-    font-weight: 700;
-    opacity: 0;
-    transition-duration: 1s;
-}
-#result-bar.fading-in-text{
-    opacity: 0;
-}
-#result-bar.fading-in-text{
-    opacity: 1;
-}
+
 #map-wrapper{
     position: relative;
 }
@@ -67,10 +56,12 @@ input[type=text],input[type=number]{
     width: 600px;
     height: 450px;
 }
+*/
 
 
 
 /*RWD*/
+/*
 #small-one input,#small-one label,#small-one button {
     font-size: 1.5em;
 }
@@ -82,11 +73,59 @@ input[type=text],input[type=number]{
 }     
 #result-bar{
     font-size: 0.9em;
-/*    background-color: gold;*/
+    background-color: gold;
 }
 
 
 #big-one input, #big-one label, #big-one button{
         font-size: 0.5em;
     }
+}
+*/
+
+#calculator{
+    margin-top: 5vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2em 5em;
+    box-sizing: border-box;
+}
+.divider{
+    height: 2em;
+}
+label{
+    color: #e5003d;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+input[type=reset],button#click-btn1,button#click-btn2{
+    color: #95cb0e;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+input[type=reset]:hover,button#click-btn1:hover,button#click-btn2:hover{
+    color: #e5003d;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+input[type=reset],button#click-btn1,button#click-btn2,input[type=text],input[type=number]{
+    border-width: 3px;
+    outline: none;
+}
+#result-bar{
+    margin-top: 2em;
+    text-align: center;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 2em;
+    transition-duration: 1s;
+}
+#result-container{
+    text-transform: uppercase;
+}
+#result-bar.fading-in-text{
+    opacity: 0;
+}
+#result-bar.fading-in-text{
+    opacity: 1;
 }
