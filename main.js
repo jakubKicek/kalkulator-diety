@@ -63,7 +63,7 @@ calc=()=>{
 }
 printResult=(result)=>{
     if(result<=0){
-        $('#you-need').text('Podane nieprawidłowe wartości, kliknij "Reset" i spróbuj jeszcze raz.');
+        $('#you-need').text('Podano nieprawidłowe wartości, kliknij "Reset" i spróbuj jeszcze raz.');
     }
     else{
         $('#you-need').text("Potrzebujesz około: ");

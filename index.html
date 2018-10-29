@@ -11,74 +11,76 @@
 <body>
     <div id="calculator">
         <form action="">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-4">
-                        <div class="container">
+                    <div class="col-sm-2"></div>
+
+                    <div class="col-sm-8">
+                        <div class="container-fluid">
                             <div class="row">
-                                <div class="col-sm-7">
+                                <div class="col-sm-12 col-md-6 col-xl-3">
                                     <label for="gender">Płeć</label>
-                                </div>
-                                <div class="col-sm-5">
-                                    <input type="text" list="genders" name="gender" id="gender" autocomplete="off">
+                                    <input class="form-control" type="text" list="genders" name="gender" id="gender" autocomplete="off">
                                     <datalist id="genders">
-                            <option value="Kobieta"></option>
-                            <option value="Mężczyzna"></option>
-                        </datalist>
+                                            <option value="Kobieta"></option>
+                                            <option value="Mężczyzna"></option>
+                                        </datalist>
                                 </div>
-                                <div class="col-sm-7">
+                                <div class="col-sm-12 d-md-none divider"></div>
+                                <div class="col-sm-12 col-md-6 col-xl-3">
                                     <label for="age">Wiek</label>
+                                    <input class="form-control" type="number" id="age" autocomplete="off">
                                 </div>
-                                <div class="col-sm-5">
-                                    <input type="number" id="age" autocomplete="off">
+                                
+                                <div class="col-sm-12 d-xl-none divider"></div>
+
+                                <div class="col-sm-12 col-md-6 col-xl-3">
+                                    <label for="height">Wzrost (cm)</label>
+                                    <input class="form-control" type="number" id="height" autocomplete="off">
                                 </div>
-                                <div class="col-sm-7">
-                                    <label for="height">Wzrost cm</label>
+                                <div class="col-sm-12 d-md-none divider"></div>
+                                <div class="col-sm-12 col-md-6 col-xl-3">
+                                    <label for="mass">Waga (kg)</label>
+                                    <input class="form-control" type="number" id="mass" autocomplete="off">
                                 </div>
-                                <div class="col-sm-5">
-                                    <input type="number" id="height" autocomplete="off">
-                                </div>
-                                <div class="col-sm-7">
-                                    <label for="mass">Masa kg</label>
-                                </div>
-                                <div class="col-sm-5">
-                                    <input type="number" id="mass" autocomplete="off">
-                                </div>
-                                <div class="col-sm-7">
-                                    <label for="activity">Aktywność</label>
-                                </div>
-                                <div class="col-sm-5">
-                                    <input type="text" list="activities" name="p-activity" id="activity" autocomplete="off">
+                                <div class="col-sm-12 divider"></div>
+
+                                <div class="col-sm-12">
+                                   <label for="activity">Aktywność</label>
+                                   <input class="form-control" type="text" list="activities" name="p-activity" id="activity" autocomplete="off">
                                     <datalist id="activities">
-                            <option value="pacjent chory, leżący w łóżku" ></option>
-                            <option value="niska aktywność fizyczna"></option>
-                            <option value="umiarkowana aktywność fizyczna" selected></option>
-                            <option value="aktywny tryb życia"></option>
-                            <option value="bardzo aktywny tryb życia"></option>
-                            <option value="wyczynowe uprawianie sportu"></option>
-                        </datalist>
+                                        <option value="pacjent chory, leżący w łóżku" ></option>
+                                        <option value="niska aktywność fizyczna"></option>
+                                        <option value="umiarkowana aktywność fizyczna" selected></option>
+                                        <option value="aktywny tryb życia"></option>
+                                        <option value="bardzo aktywny tryb życia"></option>
+                                        <option value="wyczynowe uprawianie sportu"></option>
+                                    </datalist></div>
+                                <div class="col-sm-12 divider"></div>
+
+                                <div class="col-sm-12 col-xl-6">
+                                    <input class="form-control" id="reset-btn" type="reset" value="Reset">
                                 </div>
-                                <div class="col-sm-4">
-                                    <input id="reset-btn" type="reset" value="Reset">
-                                </div>
-                                <div class="col-sm-4"></div>
-                                <div class="col-sm-4">
-                                    <button id="click-btn"> Oblicz </button>
+                                <div class="col-sm-12 d-xl-none divider"></div>
+                                <div class="col-sm-12 col-xl-6">
+                                    <button class="form-control" id="click-btn"> Oblicz </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-5"></div>
-                    <div id="result-bar" class="col-sm-12">
-                        <span id="you-need"></span><span id="result-container"></span>
-                    </div>
+                    
+                    
+                    <div class="col-sm-2"></div>
+
                 </div>
             </div>
 
         </form>
+        <div id="result-bar">
+            <span id="you-need"></span><span id="result-container"></span>
+        </div>
     </div>
-<!--
+    <!--
     <div id="map-wrapper">
         <div id="map-mask">
             
@@ -90,7 +92,7 @@
         <div id="map-range-inner"></div>
     </div>
 -->
-    
+
 
 
 
