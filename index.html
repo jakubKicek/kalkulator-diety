@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="col-sm-2"></div>
 
-                    <div class="col-sm-8">
+                    <div id="big-one" class="d-none d-md-block col-md-8">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-12 col-md-6 col-xl-3">
@@ -69,8 +69,64 @@
                         </div>
                     </div>
                     
+                                        <div class="col-sm-2"></div>
+
                     
-                    <div class="col-sm-2"></div>
+                    <div id="small-one" class="col-sm-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="gender">Płeć</label>
+                                    <input class="form-control" type="text" list="genders" name="gender" id="gender" autocomplete="off">
+                                    <datalist id="genders">
+                                            <option value="Kobieta"></option>
+                                            <option value="Mężczyzna"></option>
+                                        </datalist>
+                                </div>
+                                <div class="col-sm-12 divider"></div>
+                                <div class="col-sm-12">
+                                    <label for="age">Wiek</label>
+                                    <input class="form-control" type="number" id="age" autocomplete="off">
+                                </div>
+                                
+                                <div class="col-sm-12 divider"></div>
+
+                                <div class="col-sm-12">
+                                    <label for="height">Wzrost (cm)</label>
+                                    <input class="form-control" type="number" id="height" autocomplete="off">
+                                </div>
+                                <div class="col-sm-12 divider"></div>
+                                <div class="col-sm-12">
+                                    <label for="mass">Waga (kg)</label>
+                                    <input class="form-control" type="number" id="mass" autocomplete="off">
+                                </div>
+                                <div class="col-sm-12 divider"></div>
+
+                                <div class="col-sm-12">
+                                   <label for="activity">Aktywność</label>
+                                   <input class="form-control" type="text" list="activities" name="p-activity" id="activity" autocomplete="off">
+                                    <datalist id="activities">
+                                        <option value="pacjent chory, leżący w łóżku" ></option>
+                                        <option value="niska aktywność fizyczna"></option>
+                                        <option value="umiarkowana aktywność fizyczna" selected></option>
+                                        <option value="aktywny tryb życia"></option>
+                                        <option value="bardzo aktywny tryb życia"></option>
+                                        <option value="wyczynowe uprawianie sportu"></option>
+                                    </datalist></div>
+                                <div class="col-sm-12 divider"></div>
+
+                                <div class="col-sm-12">
+                                    <input class="form-control" id="reset-btn" type="reset" value="Reset">
+                                </div>
+                                <div class="col-sm-12 divider"></div>
+                                <div class="col-sm-12">
+                                    <button class="form-control" id="click-btn"> Oblicz </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
 
                 </div>
             </div>
