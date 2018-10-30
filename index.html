@@ -23,7 +23,7 @@
 
                             <div class="row">
                                 <div class="col-sm-12 d-lg-none">
-                                    <div class="container">
+                                    <div id="bigone" class="container">
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <label for="gender1">Płeć</label>
@@ -34,25 +34,25 @@
                                                 </datalist>
                                             </div>
                                             <div class="col-sm-12 divider"></div>
-                                            
+
                                             <div class="col-sm-12">
                                                 <label for="age1">Wiek</label>
                                                 <input class="form-control" type="number" id="age1" autocomplete="off">
                                             </div>
                                             <div class="col-sm-12 divider"></div>
-                                            
+
                                             <div class="col-sm-12">
                                                 <label for="height1">Wzrost (cm)</label>
                                                 <input class="form-control" type="number" id="height1" autocomplete="off">
                                             </div>
                                             <div class="col-sm-12 divider"></div>
-                                            
+
                                             <div class="col-sm-12">
                                                 <label for="mass1">Waga (kg)</label>
                                                 <input class="form-control" type="number" id="mass1" autocomplete="off">
                                             </div>
                                             <div class="col-sm-12 divider"></div>
-                                            
+
                                             <div class="col-sm-12">
                                                 <label for="activity1">Aktywność</label>
                                                 <input class="form-control" type="text" list="activities" name="p-activity" id="activity1" autocomplete="off">
@@ -66,7 +66,7 @@
                                                 </datalist>
                                             </div>
                                             <div class="col-sm-12 divider"></div>
-                                            
+
                                             <div class="col-sm-5">
                                                 <input class="form-control" id="reset-btn1" type="reset" value="Reset">
                                             </div>
@@ -78,48 +78,58 @@
                                     </div>
                                 </div>
                                 <div class="d-none d-lg-block col-lg-12">
-                                    <div class="container">
-                                        <div class="row checkCol">
-                                            <div class="col-lg-4">
+                                    <div id="smallone" class="container">
+                                        <div class="row">
+                                            <div class="col-lg-1"></div>
+                                            <div class="col-lg-3">
                                                 <label for="gender2">Płeć</label>
                                             </div>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-5">
                                                 <input class="form-control" type="text" list="genders" name="gender" id="gender2" autocomplete="off">
                                                 <datalist id="genders">
                                                         <option value="Kobieta"></option>
                                                         <option value="Mężczyzna"></option>
                                                 </datalist>
                                             </div>
+                                            <div class="col-lg-3"></div>
                                             <div class="col-lg-12 divider"></div>
-                                            
-                                            <div class="col-lg-4">
+
+                                            <div class="col-lg-1"></div>
+                                            <div class="col-lg-3">
                                                 <label for="age2">Wiek</label>
                                             </div>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-5">
                                                 <input class="form-control" type="number" id="age2" autocomplete="off">
                                             </div>
+                                            <div class="col-lg-3"></div>
                                             <div class="col-lg-12 divider"></div>
-                                            
-                                            <div class="col-lg-4">
+
+                                            <div class="col-lg-1"></div>
+                                            <div class="col-lg-3">
                                                 <label for="height2">Wzrost (cm)</label>
                                             </div>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-5">
                                                 <input class="form-control" type="number" id="height2" autocomplete="off">
                                             </div>
+                                            <div class="col-lg-3"></div>
+
                                             <div class="col-lg-12 divider"></div>
                                             
-                                            <div class="col-lg-4">
-                                                <label for="mass"2>Waga (kg)</label>
+                                            <div class="col-lg-1"></div>
+                                            <div class="col-lg-3">
+                                                <label for="mass" 2>Waga (kg)</label>
                                             </div>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-5">
                                                 <input class="form-control" type="number" id="mass2" autocomplete="off">
                                             </div>
+                                            <div class="col-lg-3"></div>
                                             <div class="col-lg-12 divider"></div>
-                                            
-                                            <div class="col-lg-4">
+
+                                            <div class="col-lg-1"></div>
+                                            <div class="col-lg-3">
                                                 <label for="activity2">Aktywność</label>
                                             </div>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-5">
                                                 <input class="form-control" type="text" list="activities" name="p-activity" id="activity2" autocomplete="off">
                                                 <datalist id="activities">
                                                     <option value="pacjent chory, leżący w łóżku" ></option>
@@ -130,14 +140,15 @@
                                                     <option value="wyczynowe uprawianie sportu"></option>
                                                 </datalist>
                                             </div>
+                                            <div class="col-lg-3"></div>
                                             <div class="col-lg-12 divider"></div>
-                                            
+
                                             <div class="col-lg-1"></div>
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-3">
                                                 <input class="form-control" id="reset-btn2" type="reset" value="Reset">
                                             </div>
                                             <div class="col-lg-2"></div>
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-3">
                                                 <button class="form-control" id="click-btn2"> Oblicz </button>
                                             </div>
                                             <div class="col-lg-1"></div>
